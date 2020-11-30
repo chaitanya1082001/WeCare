@@ -1,0 +1,39 @@
+2020-11-30 17:32:05.996  INFO 1580 --- [restartedMain] com.example.wecare.WeCare5Application    : Starting WeCare5Application using Java 11.0.7 on HYDPCM303419L with PID 1580 (C:\Users\chaitanya.medapati\Documents\workspace-spring-tool-suite-4-4.6.2.RELEASE\WeCare-5\target\classes started by chaitanya.medapati in C:\Users\chaitanya.medapati\Documents\workspace-spring-tool-suite-4-4.6.2.RELEASE\WeCare-5)
+2020-11-30 17:32:05.998  INFO 1580 --- [restartedMain] com.example.wecare.WeCare5Application    : No active profile set, falling back to default profiles: default
+2020-11-30 17:32:06.040  INFO 1580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-30 17:32:06.041  INFO 1580 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-11-30 17:32:06.545  INFO 1580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-30 17:32:06.546  INFO 1580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-30 17:32:06.589  INFO 1580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 2 JPA repository interfaces.
+2020-11-30 17:32:06.608  INFO 1580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-30 17:32:06.609  INFO 1580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-11-30 17:32:06.616  INFO 1580 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 MongoDB repository interfaces.
+2020-11-30 17:32:07.039  INFO 1580 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 7788 (http)
+2020-11-30 17:32:07.049  INFO 1580 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-30 17:32:07.049  INFO 1580 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-30 17:32:07.158  INFO 1580 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-30 17:32:07.159  INFO 1580 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1117 ms
+2020-11-30 17:32:07.202  WARN 1580 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-11-30 17:32:07.204  INFO 1580 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-11-30 17:32:07.214  INFO 1580 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-30 17:32:07.228 ERROR 1580 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+

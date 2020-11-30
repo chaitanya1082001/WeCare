@@ -1,0 +1,11 @@
+com\example\wecare\dto\CoachDto.class
+com\example\wecare\dto\UserDto.class
+com\example\wecare\sevice\UserServiceInterface.class
+com\example\wecare\WeCare5Application.class
+com\example\wecare\dto\ErrorMessage.class
+com\example\wecare\Controller\CoachController.class
+com\example\wecare\Controller\UserController.class
+com\example\wecare\sevice\UserService.class
+com\example\wecare\repository\CoachRepository.class
+com\example\wecare\repository\UserRepository.class
+com\example\wecare\sevice\CoachService.class
