@@ -21,7 +21,7 @@ import com.example.wecare.dto.CoachDto;
 public class CoachController {
 	@Autowired
 	private CoachService coachService;
-	@PostMapping("/loginCoach")
+	//@PostMapping("/loginCoach")"/loginCoach")
 	@PostMapping("/loginCoach")
 	public CoachDto createUser( @RequestBody CoachDto coachdto) throws Exception
 	{ String tempUser=coachdto.getName();
